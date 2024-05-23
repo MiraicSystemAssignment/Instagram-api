@@ -1,0 +1,162 @@
+/* HomePage1.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    display:flex;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    background-color: #a40c00;
+    padding: 0.5em;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+}
+
+.logoImage {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 0.5em;
+}
+
+.AppName {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 0.8em;
+    margin-top: 0em;
+}
+
+.Button1 {
+    display: block;
+    margin: auto 0.5em auto auto;
+    background-color: #a40c00;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Button2 {
+    display: block;
+    margin: 4em auto auto auto;
+    background-color: #a40c00;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.Button1:hover,
+.Button2:hover {
+    background-color: white;
+    color: black;
+}
+
+.P1Text {
+    color: white;
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 2.8em;
+}
+
+.P2Text {
+    color: white;
+    text-align: center;
+    margin-top: 0.5em; /* Adjusted margin for better spacing */
+    font-size: 2em;
+}
+
+.P3Text {
+    color: white;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .Header {
+        height: auto; 
+        padding: 0.5em; 
+    }
+
+    .logoImage {
+        max-width: 10%;
+        max-height: 10%;
+    }
+
+    .AppName {
+        font-size: 1.2em; 
+        margin-left: 0.5em; 
+    }
+
+    .Button1 {
+        margin: auto 0.5em auto auto;
+        font-size: 1em;
+    }
+    .Button2 {
+        margin-left: auto; /* Center the buttons horizontally */
+        margin-right: auto;
+        margin-top: 1.5em; /* Increase top margin for better spacing */
+        font-size: 1em;
+    }
+
+    .P1Text {
+        margin-top: 1em; /* Adjust top margin for better spacing */
+        font-size: 2em; /* Decrease font size for smaller screens */
+    }
+
+    .P2Text {
+        margin-top: 0.8em; /* Adjust top margin for better spacing */
+        font-size: 1.5em; /* Decrease font size for smaller screens */
+    }
+
+    .P3Text {
+        margin-top: 1.5em; /* Adjust top margin for better spacing */
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .Header {
+        height: auto; 
+        padding: 0.5em; 
+    }
+    
+    .logoImage {
+        max-width: 10%;
+        max-height: 10%;
+    }
+    
+    .AppName {
+        font-size: 1em;
+    }
+    
+    .Button1 {
+        font-size: 0.5em;
+    }
+
+    .Button2 {
+        font-size: 0.8em;
+    }
+    
+}
