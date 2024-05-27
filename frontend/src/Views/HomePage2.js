@@ -7,26 +7,28 @@ const HomePage2 = () => {
     return (
         <div>
             <Topbar/>
-            <div>
-                <section className="Section-one">
-                    <img src="/instagram-logo.jpg" alt="Logo" className="PostsImg" />
-                    <Link className="Link">Manage Posts</Link>
-                </section>
-                <p className="Content">Use this feature to get and publish posts and get basic profile information, photos and videos from instagram public accounts.</p>
-                <div className="Line"></div>
-                <section className="Section-two-three">
-                    <img src="/comments-logo.jpg" alt="Logo" className="CommentsImg" />
-                    <Link className="Link">Manage Comments</Link>
-                </section>
-                <p className="Content">Use this feature to manage and reply to comments on your media, identify media where you have been @mentioned by other instagram users and find hashtagged media.</p>
-                <div className="Line"></div>
-                <section className="Section-two-three">
-                    <img src="/messages-logo.jpg" alt="Logo" className="CommentsImg" />
-                    <Link className="Link">Messages</Link>
-                </section>
-                <p className="Content">Use this feature to manage your instagram messages. You can send and receive messages from other instagram accounts.</p>
-                <br />
-                <br />
+            <div className="card-container">
+                <Link className="card">
+                    <img src="/instagram-logo.jpg" alt="Logo" className="card-image" />
+                    <div className="card-content">
+                        <div className="card-title">Manage Posts</div>
+                        <p className="card-description">Use this feature to get and publish posts and get basic profile information, photos and videos from instagram public accounts.</p>
+                    </div>
+                </Link>
+                <Link className="card">
+                    <img src="/comments-logo.jpg" alt="Logo" className="card-image" />
+                    <div className="card-content">
+                        <div className="card-title">Manage Comments</div>
+                        <p className="card-description">Use this feature to manage and reply to comments on your media, identify media where you have been @mentioned by other instagram users and find hashtagged media.</p>
+                    </div>
+                </Link>
+                <Link className="card">
+                    <img src="/messages-logo.jpg" alt="Logo" className="card-image" />
+                    <div className="card-content">
+                        <div className="card-title">Messages</div>
+                        <p className="card-description">Use this feature to manage your instagram messages. You can send and receive messages from other instagram accounts.</p>
+                    </div>
+                </Link>
             </div>
         </div>
     );
