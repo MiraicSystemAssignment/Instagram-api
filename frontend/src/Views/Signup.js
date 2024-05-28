@@ -49,7 +49,10 @@ const Signup = () => {
   return (
     <div className='signup-card-container'>
       <div className="signup-card">
-        <p className='signup-label'>Signup</p>
+        <div className='signup-header'>
+          <img src="/ironman-logo.jpg" alt="Logo" className="LogoImg" />
+          <p className='signup-label'>Signup</p>
+        </div>
         <form onSubmit={handleSignup}>
           <label>Name:</label>
           <input

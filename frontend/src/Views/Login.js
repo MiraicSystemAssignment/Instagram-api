@@ -30,7 +30,7 @@ const Login = () => {
       setError('');
 
       alert('Login successful!');
-      
+
       // Redirect to homepage1 or protected route after successful login
       navigate('/homepage1'); // Navigate to '/homepage1' route
     } catch (error) {
@@ -41,33 +41,36 @@ const Login = () => {
 
   return (
     <div className='login-card-container'>
-    <div className="login-card">
-      <p className='login-label'>Login</p>
-      <form onSubmit={handleLogin}>
-        <label className='label-name'>Email:</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <label className='label-name'>Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-        <button className="login-btn" type="submit">Login</button>
-      </form>
-      <p>
-        If new user,{' '}
-        <Link to="/signup" className='registration-link'>
-          <strong>register here</strong>
-        </Link>
-      </p>
-    </div>
+      <div className="login-card">
+        <div className='login-header'>
+          <img src="/ironman-logo.jpg" alt="Logo" className="LogoImg" />
+          <p className='login-label'>Login</p>
+        </div>
+        <form onSubmit={handleLogin}>
+          <label className='label-name'>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <label className='label-name'>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+          <button className="login-btn" type="submit">Login</button>
+        </form>
+        <p>
+          If new user,{' '}
+          <Link to="/signup" className='registration-link'>
+            <strong>register here</strong>
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };

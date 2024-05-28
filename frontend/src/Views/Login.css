@@ -20,12 +20,26 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
   
-  .login-label {
-    text-align: center;
-    margin-bottom: 30px;
-    color: white;
-    font-size: 2em;
-  }
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.LogoImg {
+  max-width: 50px; 
+  max-height: 50px; 
+  border-radius: 0.2em;
+  margin-right: 10px; 
+}
+
+.login-label {
+  margin: 0; /* Remove margin to align with the image */
+  color: white;
+  font-size: 2em;
+}
+
   
   form {
     display: flex;
