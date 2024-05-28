@@ -1,51 +1,78 @@
-/* Signup.css */
+.signup-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0em;
+  margin-top: 1.5em;
+}
 
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 12px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
-  p {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+.signup-card {
+  text-decoration: none;
+  background-color: #2a2a2a;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  height: 470px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.signup-label {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: white;
+  font-size: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+.signup-btn {
+  background-color: #a40c00;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.loginpage-link {
+  text-decoration: none;
+  color: #a40c00;
+}
+
+.loginpage-link:hover {
+  color: white;
+}

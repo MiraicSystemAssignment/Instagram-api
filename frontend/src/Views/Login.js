@@ -40,17 +40,18 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Login</h2>
+    <div className='login-card-container'>
+    <div className="login-card">
+      <p className='login-label'>Login</p>
       <form onSubmit={handleLogin}>
-        <label>Email:</label>
+        <label className='label-name'>Email:</label>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <label>Password:</label>
+        <label className='label-name'>Password:</label>
         <input
           type="password"
           value={password}
@@ -58,14 +59,15 @@ const Login = () => {
           required
         />
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        <button type="submit">Login</button>
+        <button className="login-btn" type="submit">Login</button>
       </form>
       <p>
         If new user,{' '}
-        <Link to="/signup">
+        <Link to="/signup" className='registration-link'>
           <strong>register here</strong>
         </Link>
       </p>
+    </div>
     </div>
   );
 };

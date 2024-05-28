@@ -47,46 +47,48 @@ const Signup = () => {
   };
 
   return (
-    <div className="container">
-      <h2>Signup</h2>
-      <form onSubmit={handleSignup}>
-        <label>Name:</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <label>Email:</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <label>Password:</label>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <label>Confirm Password:</label>
-        <input
-          type="password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          required
-        />
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-        <button type="submit">Signup</button>
-      </form>
-      <p>
-        Already have an account?{' '}
-        <Link to="/">
-          <strong>Login here</strong>
-        </Link>
-      </p>
+    <div className='signup-card-container'>
+      <div className="signup-card">
+        <p className='signup-label'>Signup</p>
+        <form onSubmit={handleSignup}>
+          <label>Name:</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <label>Confirm Password:</label>
+          <input
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+          {error && <p style={{ color: 'red' }}>{error}</p>}
+          <button type="submit" className='signup-btn'>Signup</button>
+        </form>
+        <p>
+          Already have an account?{' '}
+          <Link to="/" className='loginpage-link'>
+            <strong>Login here</strong>
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };
