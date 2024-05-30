@@ -14,7 +14,7 @@ const Login = () => {
 
     try {
       // Send POST request to backend /api/login endpoint
-      const response = await axios.post('http://localhost:5000/api/login', {
+      const response = await axios.post('http://localhost:5001/api/login', {
         email,
         password,
       });
