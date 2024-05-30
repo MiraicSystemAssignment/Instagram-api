@@ -3,7 +3,7 @@ import axios from 'axios';
 // const axios = require('axios');
 
 // Replace these values with your actual access token and user ID
-const ACCESS_TOKEN = 'IGQWRQT1hYU0h3VFRZAa09lZAHFsRm1yV2NFQU0tNGFCcUtqeTVsWmphckpvWVd5V1pCSGpUUGlUVzlpQU9sekU4dHA2Und5Mjk3UEU3cG5OVExjUzdzc0xqa1hTaW05MFZAOZAjc2akZA4RDN6c3NhOUx3RXdjZA3djZAlUZD';
+const ACCESS_TOKEN = 'IGQWRPZAlp0WHlidldrdGY4ZAUJ2TjBnaFgySHNCcEpHdHVzblZArcHlEX0FWc0FQeFktUTh2ZA2ZAGLTlIdkU0d0tPN3FQNHhfWWhCS3pQZAzV3S1Y0eU1aWnJNMF9ad2g5TGs0VjBCMUsyd0xqNVdLbUE2YU0zN2VVbG8ZD';
 const USER_ID = '7404759666288553';
 const newCaption = 'Updated Caption';
 // Fetch posts
@@ -74,6 +74,7 @@ const ManagePost1 = () => {
   (async () => {
     const posts = await fetchPosts();
     fetchComments();
+    setPosts(posts)
   
     // Example mediaId and newCaption for editing
     if (posts.length > 0) {
