@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // const axios = require('axios');
 
-const accessToken = 'IGQWRQZATRKWk44OWI0cWlnVnBrc29KZA2ppeG5xNmVmTjlCS04wSWZAITy1OamZAKVFZAXQ0FKa0l6cFF4a244cmpwdmR5ekt5SnQzbkdxZAW1zWmEtV082ZAUZAyazd0N2htYzlDZAEtxU01MZAUpBQXMxR0w3ZAEYzN1ppMlEZD';
+const accessToken = 'IGQWRQT1hYU0h3VFRZAa09lZAHFsRm1yV2NFQU0tNGFCcUtqeTVsWmphckpvWVd5V1pCSGpUUGlUVzlpQU9sekU4dHA2Und5Mjk3UEU3cG5OVExjUzdzc0xqa1hTaW05MFZAOZAjc2akZA4RDN6c3NhOUx3RXdjZA3djZAlUZD';
 const userId = '7404759666288553';
 // const responseData = ["id", "caption", "media_url", "permalink"];
 const url = `https://graph.instagram.com/${userId}/media?fields=id,caption,media_url,permalink&access_token=${accessToken}`;

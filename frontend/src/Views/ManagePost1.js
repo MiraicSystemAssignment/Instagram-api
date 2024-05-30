@@ -3,7 +3,7 @@ import axios from 'axios';
 // const axios = require('axios');
 
 // Replace these values with your actual access token and user ID
-const ACCESS_TOKEN = 'IGQWRQZATRKWk44OWI0cWlnVnBrc29KZA2ppeG5xNmVmTjlCS04wSWZAITy1OamZAKVFZAXQ0FKa0l6cFF4a244cmpwdmR5ekt5SnQzbkdxZAW1zWmEtV082ZAUZAyazd0N2htYzlDZAEtxU01MZAUpBQXMxR0w3ZAEYzN1ppMlEZD';
+const ACCESS_TOKEN = 'IGQWRQT1hYU0h3VFRZAa09lZAHFsRm1yV2NFQU0tNGFCcUtqeTVsWmphckpvWVd5V1pCSGpUUGlUVzlpQU9sekU4dHA2Und5Mjk3UEU3cG5OVExjUzdzc0xqa1hTaW05MFZAOZAjc2akZA4RDN6c3NhOUx3RXdjZA3djZAlUZD';
 const USER_ID = '7404759666288553';
 const newCaption = 'Updated Caption';
 // Fetch posts
